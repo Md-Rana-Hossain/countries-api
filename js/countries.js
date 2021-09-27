@@ -21,7 +21,7 @@ const displayCountryInfo = data => {
         countryThumbDiv.innerHTML = `
         <h3>${country.name}</h3>
         <p>Capital : <span class="capital-name">${country.capital}</span></p>
-        <button onclick="loadCountryByName('${country.name}')"><a href="#country-details"></a> Show Details</button>
+        <button onclick="loadCountryByName('${country.name}')"><a href="#core-country-id"></a> Show Details</button>
         `
         thumbContainer.appendChild(countryThumbDiv);
     })
@@ -35,11 +35,10 @@ const loadCountryByName = (name) => {
 }
 
 const displayCountryDetails = details => {
-    const mainDetailDive = document.getElementById('country-details');
+    const mainDetailDive = document.getElementById('core-country-id');
     console.log(details);
     // const countryDiv = document.createElement('div');
     mainDetailDive.innerHTML = `
-    <div id="core-info">
     <div class="flag">
         <img src="${details.flags[0]}" alt="">
         </div>
@@ -50,7 +49,6 @@ const displayCountryDetails = details => {
         <p class="population"></p>
         <p class="region"></p>
         </div>
-    </div>
     `
     // mainDetailDive.appendChild(countryDiv);
 
