@@ -1,0 +1,35 @@
+#main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.thum-div{
+    border: 2px solid tomato;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+#country-thumb-container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    /* position: absolute;
+    left: 0;
+    top: 350px; */
+}
+.capital-name{
+    color: blue;
+    font-weight: bold;
+}
+#country-details{
+    position: relative;
+    top: 30px;
+    
+}
+.flag img{
+    width: 300px;
+    
+}
+#core-info{
+    position:fixed;
+    top: 10%;
+    left: 5%;
+}
